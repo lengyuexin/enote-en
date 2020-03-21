@@ -176,11 +176,38 @@
   <div class="slimContent">
     
       <div class="widget">
- <!--  <a href="http://127.0.0.1:3000/#/checkWrite" target="_blank" rel="noopener" style="font-size:16px;"  >写文章</a> -->
-   <span  style="font-size:16px;" >  一期一会</span>
+  <!--  <a href="http://127.0.0.1:3000/#/checkWrite" target="_blank" rel="noopener" style="font-size:16px;"  >写文章</a> -->
+  <!--   <span  style="font-size:16px;" >  一期一会</span>-->
+
+  <select id="enote-language-switch">
+    <option value="en">en</option>
+    <option value="jap">jap</option>
+    <option value="zh-CN">zh-CN</option>
+  </select>
 </div>
 
 
+<script>
+  var $els = document.getElementById("enote-language-switch");
+
+  $els.onchange = function (e) {
+
+    e = e || window.event;
+
+    if (e && e.target) {
+      var link = e.target.value;
+
+      if (link === "zh-CN") {
+        window.location.href = `https://lengyuexin.github.io`
+      } else if (link === "jap") {
+        window.location.href = `https://lengyuexin.github.io/enote-ja`
+      } else if (link === "en") {
+        window.location.href = `https://lengyuexin.github.io/enote-en`
+      }
+    }
+  }
+
+</script>
     
       
   <div class="widget">
@@ -323,9 +350,9 @@
           
           <li><a href="/categories/英语基础/">英语基础</a></li>
           
-          <li><a href="/categories/早安分享/">早安分享</a></li>
-          
           <li><a href="/categories/晚安分享/">晚安分享</a></li>
+          
+          <li><a href="/categories/早安分享/">早安分享</a></li>
           
         </ul>
       </nav>
@@ -348,6 +375,14 @@
             <div class="collection">
               
                 
+<a href="/2020/03/20/modalCompare/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:20.432Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 情态动词(比较)
+</a>
+
+
+              
+                
 <a href="/2020/03/20/modal/" class="collection-item" target="_blank" itemprop="url">
   <time datetime="2020-03-20T09:41:20.422Z" itemprop="datePublished">2020-03-20</time>
   <span>&nbsp;&nbsp;&nbsp;</span> 情态动词(概述)
@@ -364,9 +399,9 @@
 
               
                 
-<a href="/2020/03/20/modalCompare/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:20.432Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 情态动词(比较)
+<a href="/2020/03/20/passive/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:20.462Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 被动语态
 </a>
 
 
@@ -380,25 +415,9 @@
 
               
                 
-<a href="/2020/03/20/statement_1/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:20.480Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 陈述句(主谓宾/主系表)
-</a>
-
-
-              
-                
 <a href="/2020/03/20/statement_10/" class="collection-item" target="_blank" itemprop="url">
   <time datetime="2020-03-20T09:41:20.487Z" itemprop="datePublished">2020-03-20</time>
   <span>&nbsp;&nbsp;&nbsp;</span> 陈述句--长句构成
-</a>
-
-
-              
-                
-<a href="/2020/03/20/passive/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:20.462Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 被动语态
 </a>
 
 
@@ -412,9 +431,9 @@
 
               
                 
-<a href="/2020/03/20/statement_2/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:20.509Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 陈述句(主谓间宾+直宾)
+<a href="/2020/03/20/statement_1/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:20.480Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 陈述句(主谓宾/主系表)
 </a>
 
 
@@ -431,6 +450,14 @@
 <a href="/2020/03/20/statement_3/" class="collection-item" target="_blank" itemprop="url">
   <time datetime="2020-03-20T09:41:20.517Z" itemprop="datePublished">2020-03-20</time>
   <span>&nbsp;&nbsp;&nbsp;</span> 陈述句(主谓宾+宾补)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/statement_2/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:20.509Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 陈述句(主谓间宾+直宾)
 </a>
 
 
@@ -460,22 +487,6 @@
 
               
                 
-<a href="/2020/03/20/statement_8/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:20.556Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 陈述句--混合测试
-</a>
-
-
-              
-                
-<a href="/2020/03/20/virtual/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:20.578Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 虚拟
-</a>
-
-
-              
-                
 <a href="/2020/03/20/statement_7/" class="collection-item" target="_blank" itemprop="url">
   <time datetime="2020-03-20T09:41:20.549Z" itemprop="datePublished">2020-03-20</time>
   <span>&nbsp;&nbsp;&nbsp;</span> 陈述句-高频扩充-下
@@ -492,276 +503,25 @@
 
               
                 
+<a href="/2020/03/20/statement_8/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:20.556Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 陈述句--混合测试
+</a>
+
+
+              
+                
+<a href="/2020/03/20/virtual/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:20.578Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 虚拟
+</a>
+
+
+              
+                
 <a href="/2020/03/20/tense/" class="collection-item" target="_blank" itemprop="url">
   <time datetime="2020-03-20T09:41:20.571Z" itemprop="datePublished">2020-03-20</time>
   <span>&nbsp;&nbsp;&nbsp;</span> 时态
-</a>
-
-
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse早安分享" aria-expanded="true">
-              <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>
-              早安分享
-            </a>
-            <small class="text-muted">(Total 31 articles)</small>
-          </h3>
-        </div>
-        <div id="collapse早安分享" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading早安分享">
-          <div class="panel-body">
-            <div class="collection">
-              
-                
-<a href="/2020/03/20/moringShare/12/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.011Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 祝你好运(二)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/10/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:20.997Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 祝你好运(一)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/1/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:20.942Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 俗语(一)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/13/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.019Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 某样东西非常昂贵的特殊表达
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/11/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.005Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 妻管严
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/14/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.026Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 手机
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/15/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.033Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> memory
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/16/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.042Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 秒睡(crashed out)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/19/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.071Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> boss(一)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/2/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.079Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 俗语(二)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/18/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.062Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> soup
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/17/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.050Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 待在家里的表达方式
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/21/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.096Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 有关妈妈的表达(一)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/20/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.088Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> boss(二)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/22/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.105Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 有关妈妈的表达(二)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/26/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.139Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> I have been there.
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/24/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.126Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> call(一)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/25/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.133Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> call(二)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/23/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.114Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> run
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/29/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.158Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 404
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/3/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.162Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 俗语(三)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/27/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.146Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> there 相关表达
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/28/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.152Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> You got me there
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/30/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.168Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 666
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/31/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.175Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 24/7
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/5/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.185Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> Goodbye的来源
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/6/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.190Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> Top dog
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/4/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.179Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 俗语(四)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/7/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.194Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 马和猫咪的引申义
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/8/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.199Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 移动支付表达
-</a>
-
-
-              
-                
-<a href="/2020/03/20/moringShare/9/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.204Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 没有免费的午餐
 </a>
 
 
@@ -810,14 +570,6 @@
 
               
                 
-<a href="/2020/03/20/nightShare/02/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.235Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 大大的小河马
-</a>
-
-
-              
-                
 <a href="/2020/03/20/nightShare/04/" class="collection-item" target="_blank" itemprop="url">
   <time datetime="2020-03-20T09:41:21.245Z" itemprop="datePublished">2020-03-20</time>
   <span>&nbsp;&nbsp;&nbsp;</span> 马斯克给年轻人的4个建议
@@ -826,9 +578,9 @@
 
               
                 
-<a href="/2020/03/20/nightShare/05/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.251Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 爱乐之城(一)
+<a href="/2020/03/20/nightShare/02/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.235Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 大大的小河马
 </a>
 
 
@@ -850,9 +602,9 @@
 
               
                 
-<a href="/2020/03/20/nightShare/09/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.273Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 说话技巧
+<a href="/2020/03/20/nightShare/05/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.251Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 爱乐之城(一)
 </a>
 
 
@@ -866,14 +618,6 @@
 
               
                 
-<a href="/2020/03/20/nightShare/10/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.277Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 改善早起疲倦的状态
-</a>
-
-
-              
-                
 <a href="/2020/03/20/nightShare/11/" class="collection-item" target="_blank" itemprop="url">
   <time datetime="2020-03-20T09:41:21.283Z" itemprop="datePublished">2020-03-20</time>
   <span>&nbsp;&nbsp;&nbsp;</span> 肖申克的救赎(一)
@@ -882,25 +626,9 @@
 
               
                 
-<a href="/2020/03/20/nightShare/13/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.293Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 关于拖延症的演讲
-</a>
-
-
-              
-                
-<a href="/2020/03/20/nightShare/16/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.308Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 肖申克的救赎(二)
-</a>
-
-
-              
-                
-<a href="/2020/03/20/nightShare/14/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.299Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 过去成就了现在的你
+<a href="/2020/03/20/nightShare/09/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.273Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 说话技巧
 </a>
 
 
@@ -914,9 +642,41 @@
 
               
                 
-<a href="/2020/03/20/nightShare/15/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.304Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 一条狗的使命3
+<a href="/2020/03/20/nightShare/10/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.277Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 改善早起疲倦的状态
+</a>
+
+
+              
+                
+<a href="/2020/03/20/nightShare/13/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.293Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 关于拖延症的演讲
+</a>
+
+
+              
+                
+<a href="/2020/03/20/nightShare/14/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.299Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 过去成就了现在的你
+</a>
+
+
+              
+                
+<a href="/2020/03/20/nightShare/16/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.308Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 肖申克的救赎(二)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/nightShare/18/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.320Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 罗夏墨迹测试
 </a>
 
 
@@ -938,6 +698,14 @@
 
               
                 
+<a href="/2020/03/20/nightShare/15/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.304Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 一条狗的使命3
+</a>
+
+
+              
+                
 <a href="/2020/03/20/nightShare/19/" class="collection-item" target="_blank" itemprop="url">
   <time datetime="2020-03-20T09:41:21.326Z" itemprop="datePublished">2020-03-20</time>
   <span>&nbsp;&nbsp;&nbsp;</span> 咱们裸熊(二)
@@ -954,9 +722,9 @@
 
               
                 
-<a href="/2020/03/20/nightShare/18/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.320Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 罗夏墨迹测试
+<a href="/2020/03/20/nightShare/22/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.342Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 为什么我们总是会怀疑自己的人生？
 </a>
 
 
@@ -978,17 +746,17 @@
 
               
                 
-<a href="/2020/03/20/nightShare/22/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.342Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 为什么我们总是会怀疑自己的人生？
+<a href="/2020/03/20/nightShare/25/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.358Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 美国人的地理可以有多差?
 </a>
 
 
               
                 
-<a href="/2020/03/20/nightShare/25/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.358Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 美国人的地理可以有多差?
+<a href="/2020/03/20/nightShare/27/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.370Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 洗手为什么一定要用肥皂洗20秒以上？
 </a>
 
 
@@ -1001,10 +769,269 @@
 
 
               
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="panel panel-default b-no">
+        <div class="panel-heading" role="tab">
+          <h3 class="panel-title">
+            <a data-toggle="collapse" href="#collapse早安分享" aria-expanded="true">
+              <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>
+              早安分享
+            </a>
+            <small class="text-muted">(Total 31 articles)</small>
+          </h3>
+        </div>
+        <div id="collapse早安分享" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading早安分享">
+          <div class="panel-body">
+            <div class="collection">
+              
                 
-<a href="/2020/03/20/nightShare/27/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-03-20T09:41:21.370Z" itemprop="datePublished">2020-03-20</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 洗手为什么一定要用肥皂洗20秒以上？
+<a href="/2020/03/20/moringShare/1/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:20.942Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 俗语(一)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/10/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:20.997Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 祝你好运(一)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/11/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.005Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 妻管严
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/12/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.011Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 祝你好运(二)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/14/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.026Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 手机
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/13/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.019Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 某样东西非常昂贵的特殊表达
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/15/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.033Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> memory
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/16/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.042Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 秒睡(crashed out)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/19/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.071Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> boss(一)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/17/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.050Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 待在家里的表达方式
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/2/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.079Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 俗语(二)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/18/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.062Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> soup
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/22/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.105Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 有关妈妈的表达(二)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/20/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.088Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> boss(二)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/24/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.126Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> call(一)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/26/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.139Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> I have been there.
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/21/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.096Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 有关妈妈的表达(一)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/23/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.114Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> run
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/27/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.146Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> there 相关表达
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/25/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.133Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> call(二)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/29/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.158Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 404
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/28/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.152Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> You got me there
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/4/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.179Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 俗语(四)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/3/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.162Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 俗语(三)
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/31/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.175Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 24/7
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/30/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.168Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 666
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/8/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.199Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 移动支付表达
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/5/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.185Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> Goodbye的来源
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/6/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.190Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> Top dog
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/9/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.204Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 没有免费的午餐
+</a>
+
+
+              
+                
+<a href="/2020/03/20/moringShare/7/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2020-03-20T09:41:21.194Z" itemprop="datePublished">2020-03-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 马和猫咪的引申义
 </a>
 
 
